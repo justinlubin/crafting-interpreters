@@ -1,6 +1,6 @@
-package net.jlubin.jlox;
+package net.jlubin.lox;
 
-public class Token {
+class Token {
     final TokenType type;
     final String lexeme;
     final Object literal;

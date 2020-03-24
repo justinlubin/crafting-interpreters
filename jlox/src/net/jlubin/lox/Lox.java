@@ -1,4 +1,4 @@
-package net.jlubin.jlox;
+package net.jlubin.lox;
 
 import java.io.BufferedReader;
 import java.io.IOException;

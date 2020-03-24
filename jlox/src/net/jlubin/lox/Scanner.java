@@ -1,13 +1,13 @@
-package net.jlubin.jlox;
+package net.jlubin.lox;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static net.jlubin.jlox.TokenType.*;
+import static net.jlubin.lox.TokenType.*;
 
-public class Scanner {
+class Scanner {
     private static final Map<String, TokenType> keywords;
 
     static {
