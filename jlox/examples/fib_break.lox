@@ -1,0 +1,11 @@
+var b = 1;
+
+for(var a = 0;;) {
+  if (a >= 10000) {
+    break;
+  }
+  print a;
+  var temp = a;
+  a = b;
+  b = temp + b;
+}
