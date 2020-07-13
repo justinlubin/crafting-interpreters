@@ -67,6 +67,15 @@ public class Lox {
                       new Stmt.Print(parser.parseExpression())
                 );
 
+        // Stop if there was a parser error.
+        if (hadError) {
+            return;
+        }
+
+        Resolver resolver = new Resolver(interpreter);
+        resolver.resolve(statements);
+
+        // Stop if there was a resolution error.
         if (hadError) {
             return;
         }
