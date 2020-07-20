@@ -1,0 +1,7 @@
+class PotatoChip {
+  eat() {
+    print "Crunch crunch crunch!";
+  }
+}
+
+PotatoChip().eat(); // Prints "Crunch crunch crunch!".
